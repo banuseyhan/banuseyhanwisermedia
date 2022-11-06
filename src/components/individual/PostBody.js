@@ -1,6 +1,7 @@
 import React from 'react';
-import {Image, StyleSheet, Text, View} from 'react-native';
-
+import {StyleSheet, Text, View} from 'react-native';
+import {Linking} from 'react-native';
+const url = 'https://www.youtube.com/watch?v=CGzKnyhYDQI';
 const PostBody = ({item}) => {
   return (
     <View style={styles.container}>
@@ -10,20 +11,16 @@ const PostBody = ({item}) => {
       </Text>
       <View style={styles.body}>
         <View>
-          <Image
-            resizeMode="stretch"
-            source={{
-              uri: 'https://http2.mlstatic.com/D_NQ_NP_996851-MLM42944683980_072020-O.jpg',
-            }}
-            style={styles.postImg}
-          />
+          <Text onPress={() => Linking.openURL(url)} style={styles.postImg}>
+            {url}
+          </Text>
         </View>
         <View style={styles.description}>
-          <Text>
-            Lorem ipsum dolor sit amet <Text style={styles.subs}>Lorem</Text>
+          <Text style={styles.sub}>
+            This video is shared via <Text style={styles.subs}>youtube</Text>
           </Text>
           <Text numberOfLines={2} style={styles.dsc}>
-            {item.userAgent}
+            Lorem ipsum dolor sit amet
           </Text>
         </View>
       </View>
@@ -44,11 +41,15 @@ const styles = StyleSheet.create({
   },
   postImg: {
     width: '100%',
-    height: 3,
+    height: 300,
   },
 
   description: {
     padding: 10,
+    color: '#d5d1d1',
+  },
+  sub: {
+    color: '#d5d1d1',
   },
   subs: {
     color: '#EF4444',
