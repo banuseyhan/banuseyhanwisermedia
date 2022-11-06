@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Text, TouchableOpacity, View, Image, StyleSheet} from 'react-native';
 import Modals from './Modals';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
 
 
 const Header = ({item}) => {
@@ -21,7 +21,7 @@ const Header = ({item}) => {
         <Text>{item.company.title}</Text>
       </View>
       <TouchableOpacity onPress={toggleModal}>
-        <Icon name={'dots-horizontal'} size={30} />
+        <Text size={30}>...</Text>
       </TouchableOpacity>
       <Modals isModalVisible={isModalVisible} closeModal={closeModal} />
     </View>
