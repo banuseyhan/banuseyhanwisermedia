@@ -16,10 +16,10 @@ const Card = ({item}) => {
 };
 const styles = {
   container: {
-    backgroundColor: 'white',
+    backgroundColor: '#FFF',
     borderBottomWidth: 1,
     borderTopWidth: 1,
-    borderColor: 'gray',
+    borderColor: '#d5d1d1',
     marginTop: 10,
     padding: 15,
   },

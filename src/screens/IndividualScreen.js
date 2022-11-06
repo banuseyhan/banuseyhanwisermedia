@@ -61,7 +61,7 @@ const IndividualScreen = () => {
   );
 };
 const styles = {
-  ontainer: {
+  container: {
     flex: 1,
   },
 };

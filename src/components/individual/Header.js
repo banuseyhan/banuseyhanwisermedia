@@ -2,8 +2,6 @@ import React, {useState} from 'react';
 import {Text, TouchableOpacity, View, Image, StyleSheet} from 'react-native';
 import Modals from './Modals';
 
-
-
 const Header = ({item}) => {
   const [isModalVisible, setModalVisible] = useState(false);
   const toggleModal = () => setModalVisible(!isModalVisible);
@@ -21,7 +19,7 @@ const Header = ({item}) => {
         <Text>{item.company.title}</Text>
       </View>
       <TouchableOpacity onPress={toggleModal}>
-        <Text size={30}>...</Text>
+        <Text style={styles.txt}>...</Text>
       </TouchableOpacity>
       <Modals isModalVisible={isModalVisible} closeModal={closeModal} />
     </View>
@@ -49,8 +47,12 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   minute: {
-    color: 'gray',
+    color: '#d5d1d1',
     paddingLeft: 5,
+  },
+  txt: {
+    color: '#363636',
+    fontSize: 40,
   },
 });
 export default Header;

@@ -12,9 +12,9 @@ const styles = StyleSheet.create({
   container: {
     padding: 10,
     borderRadius: 20,
-    borderColor: 'gray',
+    borderColor: '#d5d1d1',
     borderWidth: 1,
-    backgroundColor: 'gray100',
+    backgroundColor: '#F3F4F6',
     marginHorizontal: 5,
     marginTop: 10,
   },

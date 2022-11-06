@@ -1,9 +1,6 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
 
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-
-
 const PostBody = ({item}) => {
   return (
     <View style={styles.container}>
@@ -19,12 +16,6 @@ const PostBody = ({item}) => {
               uri: 'https://http2.mlstatic.com/D_NQ_NP_996851-MLM42944683980_072020-O.jpg',
             }}
             style={styles.postImg}
-          />
-          <Icon
-            name={'play-circle'}
-            size={100}
-            color={'rgba(226,220,220,0.8)'}
-            style={styles.icon}
           />
         </View>
         <View style={styles.description}>
@@ -44,27 +35,23 @@ const styles = StyleSheet.create({
     paddingTop: 10,
   },
   tags: {
-    color: 'blue',
+    color: '#1441e2',
   },
   body: {
     borderWidth: 1,
-    borderColor:'gray',
+    borderColor: '#d5d1d1',
     marginTop: 10,
   },
   postImg: {
     width: '100%',
     height: 3,
   },
-  icon: {
-    position: 'absolute',
-    alignSelf: 'center',
-    top: 10,
-  },
+
   description: {
     padding: 10,
   },
   subs: {
-    color: 'red',
+    color: '#EF4444',
   },
   dsc: {
     paddingTop: 10,

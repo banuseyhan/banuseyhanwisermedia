@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const instance = axios.create({
   baseURL: 'https://dummyjson.com/',
-  timeout: 30000,
+  timeout: 400,
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',

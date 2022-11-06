@@ -17,8 +17,8 @@ const Modals = ({isModalVisible, closeModal}) => {
       backdropOpacity={0.6}
       swipeDirection="down"
       isVisible={isModalVisible}
-      animationInTiming={300}
-      animationOutTiming={300}
+      animationInTiming={200}
+      animationOutTiming={200}
       propagateSwipe={true}
       onBackdropPress={closeModal}
       style={[
@@ -27,10 +27,10 @@ const Modals = ({isModalVisible, closeModal}) => {
       ]}>
       <SafeAreaView>
         <TouchableOpacity onPress={closeModal} style={styles.mainContainer}>
-          <Text style={[styles.buttonTitle, {color: 'red'}]}>Delete</Text>
+          <Text style={[styles.buttonTitle, {color: '#EF4444'}]}>Delete</Text>
           <View style={styles.divider} />
           <Text style={styles.buttonTitle}>Share</Text>
-          <View style={{borderBottomWidth: 1, borderColor: 'gray'}} />
+          <View style={{borderBottomWidth: 1, borderColor: '#d5d1d1'}} />
           <Text style={styles.buttonTitle}>Add to Curation</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={closeModal} style={styles.cancelButton}>
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   },
   mainContainer: {
     borderRadius: 15,
-    backgroundColor:'white',
+    backgroundColor:'#FFF',
     margin: 10,
   },
   buttonTitle: {
@@ -57,11 +57,11 @@ const styles = StyleSheet.create({
   },
   divider: {
     borderBottomWidth: 1,
-    borderColor: 'gray',
+    borderColor: '#d5d1d1',
   },
   cancelButton: {
     borderRadius: 15,
-    backgroundColor: 'white',
+    backgroundColor: '#FFF',
     marginHorizontal: 10,
   },
 });
