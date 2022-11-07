@@ -6,3 +6,6 @@ Card componentinin ilk parçası olan header ı oluşturdum. Önce json data ola
 hedarın ... kısmını modal olarak yaptım. react native modal kütüphanesini kullanarak oluşturdum ve bu modalı header componenetimimn içinden çağırdım.
 PostBody componenetini oluşturudum. görsel olarak video linkini thumblink olarak video id sini tanımlayıp oluşturdum. thumnblink i youtube linkine yönlendirmesi için react native linking kütüphanesini kullanarak yönlendirdim. 
 card ın içindeki tag ler  oluşturup footer.js in içinden çağırdım. ve en sonunda tüm componentlerimi ana componentlerim içinden çağırdım.
+screensshot klasöründe uygulamaya ait görseller bulabilirsiniz. 
+styles kısmını ayrı olarak klasörlemedim tek sayfada çalışıtğım için ve siz review yaparken herşeyi birarada görebilirseniz sizin için daha kolay olur diye düşündüm.
+Çok şey öğrendiğim bir case oldu. Bu fırsatı verdiğiniz için teşekkür ederim.
