@@ -1,7 +1,10 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
+
 import {Linking} from 'react-native';
-const url = 'https://www.youtube.com/watch?v=CGzKnyhYDQI';
+
+const videoId = 'CGzKnyhYDQI';
+
 const PostBody = ({item}) => {
   return (
     <View style={styles.container}>
@@ -11,9 +14,20 @@ const PostBody = ({item}) => {
       </Text>
       <View style={styles.body}>
         <View>
-          <Text onPress={() => Linking.openURL(url)} style={styles.postImg}>
-            {url}
-          </Text>
+          <TouchableOpacity
+            onPress={() => {
+              Linking.openURL(
+                'https://www.youtube.com/watch?v=CGzKnyhYDQI&t=22s',
+              );
+            }}>
+            <Image
+              source={{uri: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`}}
+              style={{
+                width: '100%',
+                height: 200,
+              }}
+            />
+          </TouchableOpacity>
         </View>
         <View style={styles.description}>
           <Text style={styles.sub}>
@@ -27,6 +41,7 @@ const PostBody = ({item}) => {
     </View>
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     paddingTop: 10,
@@ -38,10 +53,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#d5d1d1',
     marginTop: 10,
-  },
-  postImg: {
-    width: '100%',
-    height: 300,
   },
 
   description: {
