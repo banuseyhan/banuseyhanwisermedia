@@ -1,12 +1,16 @@
 import React from 'react';
-import {ScrollView} from 'react-native';
+import {ScrollView, TouchableOpacity} from 'react-native';
 import Tags from './Tags';
 
 const Footer = () => {
   return (
     <ScrollView horizontal>
-      <Tags tag={'Arts & Culture'} />
-      <Tags tag={'Design'} />
+      <TouchableOpacity>
+        <Tags tag={'Arts & Culture'} />
+      </TouchableOpacity>
+      <TouchableOpacity>
+        <Tags tag={'Design'} />
+      </TouchableOpacity>
     </ScrollView>
   );
 };
