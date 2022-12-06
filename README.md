@@ -11,4 +11,4 @@ card ın içindeki tag ler  oluşturup footer.js in içinden çağırdım. ve en
 screensshot klasöründe uygulamaya ait görseller bulabilirsiniz. 
 styles kısmını ayrı olarak klasörlemedim tek sayfada çalışıtğım için ve siz review yaparken herşeyi birarada görebilirseniz sizin için daha kolay olur diye düşündüm.
 
-Thumblink fikri için mnetörğüm Furkan Kılıç'a teşekkür ederim.
+Thumblink fikri için mentörüm Furkan Kılıç'a teşekkür ederim.
