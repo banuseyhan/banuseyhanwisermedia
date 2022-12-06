@@ -1,3 +1,5 @@
+wiser media uygulaması için yaptığım task..
+
 Öncelikle react-native kütüphanesiyle birlikte projemi kurdum.
 Screens klasörü altında oluşturacağım screen i oluşturup app.js in içinden navigation yapısını kurup çağırdım. 
 Screen ı oluşturduktan sonra screen i componentlere böldüm ve ilk componenetim olan ana header i yani top navbar ı  Navigation yapısıyla oluşturdum.
@@ -8,4 +10,5 @@ PostBody componenetini oluşturudum. görsel olarak video linkini thumblink olar
 card ın içindeki tag ler  oluşturup footer.js in içinden çağırdım. ve en sonunda tüm componentlerimi ana componentlerim içinden çağırdım.
 screensshot klasöründe uygulamaya ait görseller bulabilirsiniz. 
 styles kısmını ayrı olarak klasörlemedim tek sayfada çalışıtğım için ve siz review yaparken herşeyi birarada görebilirseniz sizin için daha kolay olur diye düşündüm.
-Çok şey öğrendiğim bir case oldu. Bu fırsatı verdiğiniz için teşekkür ederim.
+
+Thumblink fikri için mnetörğüm Furkan Kılıç'a teşekkür ederim.
